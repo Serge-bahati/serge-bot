@@ -15,7 +15,7 @@ async function getAIResponse(input, userName, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = `💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗕𝗢𝗧💦\n●╭━─━─━─≪✠≫─━─━─━╮●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️`;
+  let response = `🎯SERGE BAHATI🎯\n●●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️`;
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -42,7 +42,7 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
     if (!input) {
-      api.sendMessage("💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜💦\n ●ッ≪━─━─━─━─◈─━─━─━─━≫●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️", event.threadID, event.messageID);
+      api.sendMessage("💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜💦\n ●●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️", event.threadID, event.messageID);
       return;
     }
 
@@ -53,7 +53,7 @@ module.exports = {
       }
       const userName = ret[event.senderID].name;
       const { response, messageID } = await getAIResponse(input, userName, event.senderID, event.messageID);
-      api.sendMessage(`✰. 𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗥𝗖𝗞𝗘𝗥𝗠𝗔𝗡 .✰:\n●╭━─━─━─≪✠≫─━─━─━╮●\n\n${response}\n\n╰┈┈┈➤⊹⊱✰✫✫✰⊰⊹`, event.threadID, messageID);
+      api.sendMessage(`✰. SERGE BAHATI .✰:\n●╭━─━─━─≪✠≫─━─━─━╮●\n\n${response}\n\n╰┈┈┈➤⊹⊱✰✫✫✰⊰⊹`, event.threadID, messageID);
     });
   },
   onChat: async function ({ api, event, message }) {
