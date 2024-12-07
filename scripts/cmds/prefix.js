@@ -14,7 +14,7 @@ module.exports = {
  onChat: async function({ event, message, getLang }) {
  if (event.body && event.body.toLowerCase() === "prefix") {
  return message.reply({
- body: `\n┏━━━━━━┓\n𝑷𝑹𝑬𝑭𝑰𝑿 ↠# \n/┗━━━━━━┛`,
+ body: `\n┏━━━━━━┓\n𝑷𝑹𝑬𝑭𝑰𝑿 ↠¥ \n┗━━━━━━┛`,
  attachment: await global.utils.getStreamFromURL("https://i.ibb.co/JHgwRHD/image.jpg")
  });
  }
